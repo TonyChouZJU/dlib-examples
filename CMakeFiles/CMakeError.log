@@ -1,0 +1,73 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2580519226/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2580519226.dir/build.make CMakeFiles/cmTryCompileExec2580519226.dir/build
+make[1]: Entering directory `/home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2580519226.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2580519226.dir/CheckSymbolExists.c.o   -c /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2580519226
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2580519226.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2580519226.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2580519226 -rdynamic 
+CMakeFiles/cmTryCompileExec2580519226.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2580519226] Error 1
+make[1]: Leaving directory `/home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2580519226/fast] Error 2
+
+File /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec506577141/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec506577141.dir/build.make CMakeFiles/cmTryCompileExec506577141.dir/build
+make[1]: Entering directory `/home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec506577141.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec506577141.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec506577141
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec506577141.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec506577141.dir/CheckFunctionExists.c.o  -o cmTryCompileExec506577141 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec506577141] Error 1
+make: *** [cmTryCompileExec506577141/fast] Error 2
+
+
+Determining if the function sgetrf_single exists failed with the following output:
+Change Dir: /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1968938023/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1968938023.dir/build.make CMakeFiles/cmTryCompileExec1968938023.dir/build
+make[1]: Entering directory `/home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1968938023.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single   -o CMakeFiles/cmTryCompileExec1968938023.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1968938023
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1968938023.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single    CMakeFiles/cmTryCompileExec1968938023.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1968938023 -rdynamic -lcblas 
+CMakeFiles/cmTryCompileExec1968938023.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sgetrf_single'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1968938023] Error 1
+make[1]: Leaving directory `/home/zyb/cv/dlib/dlib/examples/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1968938023/fast] Error 2
+
+
